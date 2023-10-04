@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=1920 height=1080></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -58,11 +58,11 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/1004.loader.js";
       var config = {
-        dataUrl: buildUrl + "/1004.data.br",
-        frameworkUrl: buildUrl + "/1004.framework.js.br",
-        codeUrl: buildUrl + "/1004.wasm.br",
+        dataUrl: buildUrl + "/1004.data.unityweb",
+        frameworkUrl: buildUrl + "/1004.framework.js.unityweb",
+        codeUrl: buildUrl + "/1004.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
+        companyName: "Hippo",
         productName: "chatBotURP",
         productVersion: "0.1.0",
         showBanner: unityShowBanner,
@@ -93,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1920px";
+        canvas.style.height = "1080px";
       }
 
       loadingBar.style.display = "block";
